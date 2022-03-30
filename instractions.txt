@@ -1,10 +1,35 @@
 all instructions will be added here
 
-'''
-1. cmd
-2. cd workspace
-3 .\venv\Scripts\activate.bat
-4. code .
-5. python manage.py runserver
+1.RUNNING THE CODE 
+Step 1: activate the environment by running the following commands
+    - type cmd (command prompt) in the search bar in the panel and enter
+    - cd workspace/wbot               Note if it doesnt work replace '/' with '\'
+    - venv/Scripts/activate.bat
 
-'''
+Step 2: Start the server in your pc by typing the following command 
+    - python manage.py runserver
+    - open any browser and login to whatsapp in one tab and in a new tab open  http://127.0.0.1:8000/  
+
+1.UPDATING THE CODE
+- open git bash (by searching git bash on the panel bar)
+then copy the following lines in the same order
+    cd workspace/wbot                 Note if it doesnt work replace '/' with '\'
+    git stash
+    git pull
+    git stash pop
+
+-then if the local server on your pc is running(i.e 127.0.0.1:8000 is accessible
+                - stop it by pressing ctrl+D followed by Ctrl+C
+                then restart it in the command promt 'cmd')
+                
+
+3. ADDING GROUPS
+ if you have opened git bash and  already did "cd workspace/wbot", then type the following
+    - code .                          Note: You have to include "."
+if you've not open git bash  do the following
+- open git bash (by searching git bash on the panel bar)
+then copy the following lines in the same order
+    cd workspace/wbot                 Note if it doesnt work replace '/' with '\'
+    git stash
+
+

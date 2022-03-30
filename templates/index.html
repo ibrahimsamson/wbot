@@ -6,6 +6,7 @@
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 -->
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,7 +20,7 @@
     <!-- =============== Google fonts =============== -->
     <link href='https://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
-	<!-- =============== fonts awesome =============== -->
+    <!-- =============== fonts awesome =============== -->
     <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" type="text/css">
     <!-- =============== Plugin CSS =============== -->
     <link rel="stylesheet" href="{% static 'css/animate.min.css' %}" type="text/css">
@@ -42,27 +43,27 @@
         <div id="loading">
         </div>
     </div>
-   
-   
+
+
     <!-- =============== Contact =============== -->
     <section id="contact">
-	<!-- =============== container =============== -->
-		<div class="container">
-			    <div class="row">
-                 <div class="col-xs-12 col-sm-12 col-md-12 wow bounceIn animated headding" data-wow-delay=".1s">
-                   <h2>Forwarding  <span>Bot</span></h2>
-                   <p>Write the message and click send message and then dont toouch anything.</p>
-               </div>
+        <!-- =============== container =============== -->
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 wow bounceIn animated headding" data-wow-delay=".1s">
+                    <h2>Forwarding <span>Bot</span></h2>
+                    <p>Write the message and click send message and then dont toouch anything.</p>
+                </div>
 
-			</div>
+            </div>
 
-			<div class="row">
+            <div class="row">
 
-				<div class="col-xs-12 col-sm-4 col-md-4 wow bounceIn animated" data-wow-delay=".1s">
+                <div class="col-xs-12 col-sm-4 col-md-4 wow bounceIn animated" data-wow-delay=".1s">
 
-					<form>
-						<div class="ajax-hidden">
-							<!-- <div class="form-group wow fadeInUp animated">
+                    <form action="{% url 'wbot:txt' %}" method="GET" value="{{request.GET.query}}">
+                        <div class="ajax-hidden">
+                            <!-- <div class="form-group wow fadeInUp animated">
 								<label for="c_name" class="sr-only">Name</label>
 								<input type="text" placeholder="Name" name="c_name" class="form-control" id="c_name">
 							</div>
@@ -72,22 +73,25 @@
 								<input type="email" placeholder="E-mail" name="c_email" class="form-control" id="c_email">
 							</div> -->
 
-							<div data-wow-delay=".2s" class="form-group wow fadeInUp animated">
-								<textarea placeholder="Message" rows="7" name="c_message" id="c_message" class="form-control"></textarea>
-							</div>
+                            <div data-wow-delay=".2s" class="form-group wow fadeInUp animated">
+                                <textarea placeholder="Message" rows="7" name="c_message" id="c_message"
+                                    class="form-control" action=""></textarea>
+                            </div>
 
-							<button data-wow-delay=".3s" class="btn btn-sm btn-block wow fadeInUp animated" type="submit">Send Message</button>
-						</div>
-						<div class="ajax-response"></div>
-					</form>
+                            <button data-wow-delay=".3s" class="btn btn-sm btn-block wow fadeInUp animated"
+                                type="submit">Send Message</button>
+                        </div>
+                        <div class="ajax-response"></div>
+                    </form>
+                    
 
-				</div>
-               
-                            
-			</div>
-		</div><!-- =============== container end =============== -->
-	</section>
-    
+                </div>
+
+
+            </div>
+        </div><!-- =============== container end =============== -->
+    </section>
+
     <!-- =============== jQuery =============== -->
     <script src="{% static 'js/jquery.js' %}"></script>
     <!-- =============== Bootstrap Core JavaScript =============== -->
@@ -112,4 +116,5 @@
         });
     </script>
 </body>
+
 </html>
