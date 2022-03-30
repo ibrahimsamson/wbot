@@ -1,1 +1,10 @@
 all instructions will be added here
+
+'''
+1. cmd
+2. cd workspace
+3 .\venv\Scripts\activate.bat
+4. code .
+5. python manage.py runserver
+
+'''

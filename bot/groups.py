@@ -1,8 +1,7 @@
-groups = [
-    '''
-    Add the group Id in this in the quotation marks and remove the whatsapp domain preffixes 
 
-    '''
+
+groups = [
+    # Add the group Id in this in the quotation marks and remove the whatsapp domain preffixes 
     'DvCP4tOrcrl0JKkZXFkkuD',
     'Kd74Wh0YTEdGkuBFhTOU4d',
     'C1IILq1uSbJ8tTiHRZYX6Z',
@@ -137,11 +136,4 @@ groups = [
 
 ]
 
-'''
-1. cmd
-2. cd workspace
-3 .\venv\Scripts\activate.bat
-4. code .
-5. python manage.py runserver
 
-'''

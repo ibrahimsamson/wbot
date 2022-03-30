@@ -6,7 +6,7 @@ image = ''    # example image =  'images/Hello.png'
 
 caption = '' # example caption =  'hello'
 class Homepage(TemplateView):
-    template_name = 'contact.html'
+    template_name = 'index.html'
 
 def send_image(request, group_id, image, caption):
     if request.method == 'GET':
@@ -14,7 +14,7 @@ def send_image(request, group_id, image, caption):
     # for group_id in groups:
     #     pwk.sendwhats_image(group_id, image, caption)
 
-    return render(request, 'contact.html', )
+    return render(request, 'index.html', )
 
 # def send_txt(request, group_id, txt):
 def send_txt(request, group_id, txt):
@@ -23,7 +23,7 @@ def send_txt(request, group_id, txt):
 
     if request.method == 'GET':
         print(request.method)
-    return render(request, 'contact.html', )
+    return render(request, 'index.html', )
 
 
     # query = request.GET.get('query')
