@@ -33,3 +33,9 @@ then copy the following lines in the same order
     git stash
 
 
+
+
+
+
+
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple django==3.2
