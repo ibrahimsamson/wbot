@@ -1,6 +1,6 @@
 
 
-groups = [
+groups_id = [
     # Add the group Id in this in the quotation marks and remove the whatsapp domain preffixes 
     'DvCP4tOrcrl0JKkZXFkkuD',
     'Kd74Wh0YTEdGkuBFhTOU4d',
