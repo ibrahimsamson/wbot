@@ -1,2 +1,2 @@
 # wbot
-What app text forwarding bot that runs locally on the pc not the server
+WhatsApp text forwarding bot that runs locally on the pc. Can't run on the server because it's Headless
